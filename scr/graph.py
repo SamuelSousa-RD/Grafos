@@ -31,7 +31,7 @@ class Graph:
         if not self.directed and v in self.adj:
             self.adj[v] = [edge for edge in self.adj[v] if edge[0] != u]
 
-    # Exibir
+    # Exibir o grafo
     def show(self):
         print("Grafo (Lista de Adjacência):")
         for v in self.adj:
